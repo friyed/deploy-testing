@@ -1,0 +1,4 @@
+{
+    "workspaces": ["workspace1", "workspace2", "workspace3"]
+}
+
