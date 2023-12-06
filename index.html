@@ -34,7 +34,7 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             // Make an HTTP GET request to the Flask server to get the list of files
-            fetch('http://localhost:7000/workspaces')
+            fetch('https://deploy-test-xjw8.onrender.com/workspaces')
                 .then(response => response.json())
                 .then(data => {
                     const fileDropdown = document.getElementById('workspaces');
@@ -55,7 +55,7 @@
 
         document.addEventListener('DOMContentLoaded', function() {
             // Make an HTTP GET request to the Flask server to get the list of files
-            fetch('http://localhost:7000/folders')
+            fetch('https://deploy-test-xjw8.onrender.com/folders')
                 .then(response => response.json())
                 .then(data => {
                     const fileDropdown = document.getElementById('folders');
@@ -78,7 +78,7 @@
             const htmlContent = document.getElementById('htmlContent').value;
 
             // Make an HTTP POST request to the Flask server
-            fetch('http://localhost:7000/saved-html', {
+            fetch('https://deploy-test-xjw8.onrender.com/saved-html', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -103,7 +103,7 @@
             const password = document.getElementById('password').value;
 
             // Make an HTTP POST request to the Flask server
-            fetch('http://localhost:7000/login', {
+            fetch('https://deploy-test-xjw8.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
